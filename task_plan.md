@@ -53,7 +53,7 @@ Likely Phase 1 slices:
 | ID | Decision | Status |
 |---|---|---|
 | D1 | Product name: Agent Wizard vs Agent Foundry Wizard | open |
-| D2 | Install shape: plugin, skill pack, repo template, CLI, or hybrid | open |
+| D2 | Install shape: plugin, skill pack, repo template, CLI, or hybrid | closed — Claude Code plugin containing 16 skills + agent orchestra + hooks, installed under `.claude/plugins/agent-wizard/` (locked 2026-05-11 via Group A grill Q4) |
 | D3 | Default autonomy level | provisional L1 patch preview |
 | D4 | Whether commands should use `/wizard:*` or `/agent-wizard:*` | provisional `/wizard:*` |
 | D5 | How hard to enforce docs budget | open |

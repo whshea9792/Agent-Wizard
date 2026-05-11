@@ -1,55 +1,37 @@
 # Grill Me With Docs — next operator questions
 
-Ask these after scaffold lands.
+> Group A (5 product-canon questions) resolved 2026-05-11.
+> Remaining items here = autonomy default + dogfood ordering + install-write detail.
+> See `docs/PROJECT_CANON.md` (anchors) and `docs/KILL_GATES.md` (Q3 enforcement) for the resolved decisions.
 
-## 1. Product shape
+Ask these in the next grill round.
 
-Should Agent Wizard be primarily:
-
-A. Claude Code plugin  
-B. Agent Skill pack  
-C. repo template  
-D. CLI  
-E. hybrid
-
-Answer goes to: `docs/PROJECT_CANON.md`
-
-## 2. Default autonomy
+## 1. Default autonomy
 
 Confirm or change the default autonomy level. The scaffold currently uses L1 patch preview.
 
-A. Keep L1 patch preview  
-B. Downgrade to L0 advisory  
-C. L2 local write  
-D. L3 commit-gated  
+A. Keep L1 patch preview
+B. Downgrade to L0 advisory
+C. L2 local write
+D. L3 commit-gated
 E. L4 PR autopilot
 
 Answer goes to: `docs/AUTONOMY_POLICY.md`
 
-## 3. Target user
-
-Who is the first user persona?
-
-A. Hong only  
-B. AI beginner  
-C. Claude Code power user  
-D. solo founder  
-E. repo maintainer
-
-Answer goes to: `docs/PROJECT_CANON.md`
-
-## 4. First dogfood
+## 2. First dogfood
 
 Which comes first?
 
-A. Agent Wizard scans itself  
-B. Agent Wizard scans ARC-NBA  
+A. Agent Wizard scans itself
+B. Agent Wizard scans ARC-NBA
 C. Both, but self first
 
 Answer goes to: `docs/SELF_HARNESS_LOOP.md`
 
-## 5. Install behavior
+## 3. Install behavior
 
 Should `/wizard:12-install` directly write files after approval, or always create a patch file first?
 
 Answer goes to: `docs/WIZARD_FLOW.md` and `docs/AUTONOMY_POLICY.md`
+
+Note: Gate 1 in `docs/KILL_GATES.md` already mandates a fresh `/wizard:11-diff` artifact before any install. This question is about what happens **after** the gate passes — direct write vs. patch-file intermediary.
