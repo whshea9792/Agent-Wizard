@@ -18,9 +18,9 @@ Agent Wizard is completed step by step. Each step has a command, prerequisite, o
 | 08 | `/wizard:08-harness` | Commands | Harness plan | No deterministic checks |
 | 09 | `/wizard:09-eval` | Harness | Eval rubric | No measurable criteria |
 | 10 | `/wizard:10-autonomy` | Eval | Autonomy policy | No kill gates |
-| 11 | `/wizard:11-diff` | Policy | Proposed patch | Diff too wide |
-| 12 | `/wizard:12-install` | Approved diff | Files installed | User rejects diff |
-| 13 | `/wizard:13-dogfood` | Installed wizard | Dogfood report | Target repo phase conflict |
+| 11 | `/wizard:11-diff` | Policy + diff artifact slot exists | Proposed patch (saved as diff artifact) | Diff too wide |
+| 12 | `/wizard:12-install` | Fresh `/wizard:11-diff` artifact exists (Gate 1) | Plugin manifest + 16 skill bodies + orchestra agents + hooks written under target repo `.claude/plugins/agent-wizard/` | User rejects diff, or Gate 1 refuses (no/stale diff artifact) |
+| 13 | `/wizard:13-dogfood` | Installed wizard AND target branch ≠ ARC-NBA mainline (Gate 2) | Dogfood report + recorded learning in `findings.md` | Target repo phase conflict, or Gate 2 refuses (ARC-NBA `main`/`master`) |
 | 14 | `/wizard:14-iterate` | Dogfood report | Improvement plan | Regression risk unclear |
 | 15 | `/wizard:15-doctor` | Any time | Drift report | Critical contradiction found |
 | 16 | `/wizard:16-ship` | Green doctor | PR/release plan | Acceptance missing |

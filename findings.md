@@ -88,3 +88,26 @@ Agent Wizard scans itself → diagnoses weak docs/gates → proposes patch → r
 ```
 
 This prevents the wizard from becoming a pretty generator that cannot survive its own process.
+
+## Finding 6 — Schema-bound interview beats open Q&A (methodology validation)
+
+Source: Group A grill round, 2026-05-11.
+
+The canonical 5-field block from `docs/GRILL_ME_WITH_DOCS.md` (`question / why_it_matters / answer_goes_to / affects_command / blocking_if_unanswered`) was applied to 5 product-canon questions in a single round.
+
+Observed outcomes:
+
+1. Surfaced 2 doc-level contradictions (C1 advisory-vs-enforced ARC-NBA rule; C2 dogfood signal omission) that an open Q&A would likely have missed, because each answer was forced to declare a target file and an affected command.
+2. Closed 3 previously open product decisions in one round (primary user, install shape, done definition).
+3. Produced a measurable doc edit plan with no ambiguity about where each anchor lives.
+
+Design implication for `/wizard:03-grill`:
+
+- The 5-field schema is **load-bearing**, not cosmetic. Drop any field and the round degrades.
+- `answer_goes_to` is the single field that prevents anchor drift — every answer must name exactly one canonical file.
+- `affects_command` is what catches advisory-vs-enforced contradictions early.
+- `blocking_if_unanswered` distinguishes questions that gate Phase 1 from questions that can be deferred.
+
+Validates the `/wizard:03-grill` design before any implementation work. The implementation must preserve the 5-field schema verbatim; deviation reopens the contradiction class this round just closed.
+
+Voice tension to track (not a contradiction): Q2 promise frames "any working repo" (product positioning) while Q1 user is "AI beginner" (operator persona). Future doc voice must hold these distinct — positioning describes the product surface, persona describes who walks it.
