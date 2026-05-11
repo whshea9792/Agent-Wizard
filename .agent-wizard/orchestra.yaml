@@ -1,0 +1,25 @@
+orchestrator:
+  role: "Translate fuzzy operator intent into a safe, stepwise setup plan."
+  outputs:
+    - task_plan.md
+    - proposed_diff
+  refuses:
+    - "silent scope expansion"
+    - "unbounded autopilot"
+
+agents:
+  architect:
+    role: "Design project boundaries and artifact contracts."
+    output: "docs/design sections"
+  researcher:
+    role: "Extract public-source methodology and write findings."
+    output: "findings.md"
+  command_designer:
+    role: "Maintain ordered slash command menu."
+    output: ".claude/commands/*.md"
+  harness_designer:
+    role: "Define deterministic guardrails."
+    output: "docs/HARNESS_SPEC.md"
+  reviewer:
+    role: "Find contradictions and unsafe autonomy."
+    output: "doctor report"

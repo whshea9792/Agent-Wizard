@@ -1,0 +1,37 @@
+repo_scan:
+  input:
+    - repo_path
+    - allowed_files
+  output:
+    - repo_profile
+    - phase_detection
+    - risk_flags
+  metric:
+    - required_files_detected
+    - false_positive_sensitive_file_reads
+
+question_generation:
+  input:
+    - repo_profile
+    - missing_artifacts
+  output:
+    - question_set
+  metric:
+    - artifact_mapping_coverage
+
+persona_generation:
+  input:
+    - project_profile
+    - autonomy_policy
+  output:
+    - persona_contract
+  metric:
+    - hard_rule_completeness
+
+doctor:
+  input:
+    - generated_artifacts
+  output:
+    - drift_report
+  metric:
+    - critical_contradictions_found

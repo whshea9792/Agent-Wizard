@@ -1,0 +1,18 @@
+{
+  "name": "Agent Wizard",
+  "phase": "0-docs-first-scaffold",
+  "default_autonomy_level": "L1-patch-preview",
+  "command_prefix": "/wizard",
+  "commands_ordered": true,
+  "dogfood_targets": [
+    "self",
+    "whshea9792/ARC-NBA"
+  ],
+  "hard_locks": [
+    "credentials",
+    "paid_api_calls",
+    "money_movement",
+    "production_deploy",
+    "trading_execution"
+  ]
+}

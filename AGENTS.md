@@ -1,10 +1,10 @@
 # AGENTS.md — Agent Wizard Cold-Start Brief
 
-> Target: any Claude Code session can read this file and understand the repo in under 3 minutes.
+> Target: any Codex / Claude Code session can read this file and understand the repo in under 3 minutes.
 
 ## 1. Identity
 
-Agent Wizard is a Claude Code setup wizard for generating repo-native agent operating systems.
+Agent Wizard is a setup wizard for generating repo-native agent operating systems.
 
 It turns:
 

@@ -1,12 +1,12 @@
 # Agent Wizard
 
-> Claude Code setup wizard for building repo-native agent operating systems from ground 0: idea → POC → prototype → MVP → end product → north-star expansion.
+> Claude Code / Codex setup wizard for building repo-native agent operating systems from ground 0: idea → POC → prototype → MVP → end product → north-star expansion.
 
-Agent Wizard is not a generic prompt pack. It is a docs-first, harness-first Claude Code plugin concept that scans a working repo, grills the operator with structured questions, and generates a tailored agent operating system for that repo.
+Agent Wizard is not a generic prompt pack. It is a docs-first, harness-first setup wizard that scans a working repo, grills the operator with structured questions, and generates a tailored agent operating system for that repo.
 
 ## North Star
 
-Build a **step-by-step Claude Code setup wizard** that helps a beginner operator create a production-grade project agent with:
+Build a **step-by-step setup wizard** that helps a beginner operator create a production-grade project agent with:
 
 1. a clear project canon,
 2. a repo-native persona contract,
@@ -17,7 +17,7 @@ Build a **step-by-step Claude Code setup wizard** that helps a beginner operator
 7. research / iteration loop,
 8. dogfood feedback loop.
 
-The wizard should make a fuzzy idea executable without pretending that unlimited autonomy is safe.
+The wizard should make fuzzy ideas executable without pretending that unlimited autonomy is safe.
 
 ## What this repo is
 
@@ -61,7 +61,7 @@ The slash commands are intentionally ordered so a beginner can complete the wiza
 
 **Phase 0 — Docs-first scaffold.**
 
-No implementation code yet. The job now is to define the product, wizard flow, artifacts, and acceptance criteria tightly enough that Claude Code can implement without guessing.
+No implementation code yet. The job now is to define the product, wizard flow, artifacts, and acceptance criteria tightly enough that Codex / Claude Code can implement without guessing.
 
 ## Reading order
 

@@ -6,7 +6,7 @@
 
 Use only:
 
-- official public Anthropic / Claude Code / Claude Agent SDK docs and repos,
+- official public Anthropic / Claude Agent SDK / Claude Code docs and repos,
 - public community repos such as `OthmanAdi/planning-with-files`,
 - this repo's own dogfood results,
 - ARC-NBA as a dogfood target with explicit boundary.
